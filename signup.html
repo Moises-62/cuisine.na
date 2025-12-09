@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <sript type="text/javascript" src="validation.js" defer></sript>
+</head>
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+       
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+       }
+       
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url('registrationBG.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 100vh;
+        margin: 0; 
+       }
+
+       .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+       }
+
+        .logo {
+        position: absolute;
+        top: 5%;  
+        left: 5%; 
+        pointer-events: auto;
+      }
+
+
+       .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(199, 189, 130, 0.45); 
+        backdrop-filter: blur(2px); 
+        z-index: -1;
+       }
+
+       .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 500px;
+        background: rgba(245, 211, 190, 0.95);
+        border-radius: 14px;
+        border: 5px solid rgba(122, 140, 40, 0.45);
+        box-shadow:
+        0 6px 18px rgba(93, 76, 60, 0.35),
+        0 0 28px rgba(128, 180, 90, 0.25);
+        transition: 0.3s ease;
+       }
+
+        h2 {
+        font-size: 2em;
+        text-align: left;
+        font-weight: bold;
+        color: #7cb862;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+
+        .signup-box, .user-box, .password-box, .password-box1 {
+        position: relative;
+        width: 320px;
+        margin-top: 30px 0;
+        }
+
+        .signup-box input, .user-box input, .password-box input, .password-box1 input {
+        width: 100%;
+        height: 50px;
+        background-color: #7b9221; 
+        background: solid;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        font-size: 1em;
+        color: white;
+        padding: 0 10px 0 35px;
+        margin-bottom: 10px;
+        }
+
+        .signup-box input::placeholder, .user-box input::placeholder, .password-box input::placeholder, .password-box1 input::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+        }
+
+        .user-box .icon, .password-box .icon, .password-box1 .icon, .signup-box .icon {
+        position: absolute;
+        left: 10px;
+        font-size: 1.2em;
+        color: white;
+        line-height: 55px;
+        margin-bottom: 10px
+        }
+
+        .signupbtn {
+        width: 320px;
+        height: 50px;
+        background: limegreen;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1em;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+        }
+
+        .old-user {
+        font-size: 0.9em;
+        text-align: center;
+        margin: 25px 0;
+        }
+        
+        .old-user p {
+         color: rgb(34, 33, 33);
+        }
+
+        .old-user a {
+          color: dodgerblue;
+          text-decoration: none;
+        }
+
+        .old-user a:hover {
+          font-weight: bold;
+          color: rgb(93, 212, 233);
+          text-decoration: underline;
+        }
+
+</style>
+<header>
+<div class ="logo">
+        <h1><img src="Cuisine-na-logo.png" alt="Logo" width="30%" height="15%"></h1>
+    </div>
+</header>
+<body>
+
+<div class="overlay"></div>
+<div class = "wrapper">
+<form id ="signupForm" action="/signup" method="post">
+    <h2>Create Account</h2>
+    <p id ="errorMsg" style="display:none; color:red;">Please fix the errors below:</p>
+
+    <div class = user-box>
+    <input type="text" placeholder="User Name" name="user" id="user" required>
+    <span class="icon"><ion-icon name="person"></ion-icon></span>
+    </div>
+
+    <div class = signup-box>
+    <input type="text" placeholder="Email" name="email" id="email" required>
+    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+    </div>
+
+    <div class = password-box>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+    </div>
+
+    <div class = password-box1>
+    <input type="password" placeholder="Repeat Password" name="psw2" id="psw2" required>
+    <span class="icon"><ion-icon name="bag-check-outline"></ion-icon></span>
+    </div>
+    
+    <button type="submit" class="signupbtn">Sign Up</button>
+
+    <div class="old-user">
+    <p>Already have an account? <a href="Login.html">Login</a>.</p>
+
+</form>
+
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  document.getElementById("signupForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  let username = document.getElementById("user").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("psw").value;
+  let confirmPassword = document.getElementById("psw2").value;
+
+  if (password !== confirmPassword) {
+    document.getElementById("errorMsg").innerText = "Passwords do not match!";
+    document.getElementById("errorMsg").style.display = "block";
+    return;
+  }
+
+  let users = JSON.parse(localStorage.getItem("users")) || {};
+  users[username] = { email: email, password: password };
+  localStorage.setItem("users", JSON.stringify(users));
+
+  window.location.href = "index.html";
+});
+</script>
+
+</html>

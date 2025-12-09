@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuisune-na | Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="Cuisine-na-logo.png" alt="Logo" width="15%" height="7.5%">
+
+            <ul>
+                <li style="color: white; font-weight: bolder; text-decoration: underline;">
+        <li class="nav-active"><a href="index.html">Home</a></li>
+        <li class="nav-active"><a href="mainc.html">Main Course</a></li>
+        <li class="nav-active"><a href="sides.html">Sides</a></li>
+        <li class="nav-active"><a href="sal.html">Salads</a></li>
+        <li class="nav-active"><a href="dess.html">Desserts</a></li>
+
+                <form class="search-form" action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="q">
+                </form>
+
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </ul>
+        </nav>
+    </header>
+
+<nav class="side-menu" id="sideMenu">
+    <a href="#" class="side-logo">
+        <img src="Cuisine-na-logo.png" alt="Cuisune-na Logo">
+    </a>
+<a href="profile.html" class="account-link highlighted">
+    <i class='bx bx-user-circle'></i> Accounts
+</a>
+    
+    <hr style="width: 100%; border: 0; 
+    border-top: 1px solid #eee; 
+    margin: 15px 0;">
+    
+    <h4>Navigation</h4> 
+    <ul>
+            <li><a href="#dish" class="scroll-link">Overview</a></li> 
+            <li><a href="#recipe-details" class="scroll-link">Preparation</a></li>
+            <li><a href="#walkthrough" class="scroll-link">Walkthrough</a></li>
+            <li><a href="#contact-info" class="scroll-link">Contact Us</a></li>
+    </ul>
+    
+</nav>
+
+    <div class="overlay" id="overlay"></div>
+
+<main class="dish-content" id="dish">
+    
+    <h1 class="dish-title">Fried Chicken</h1>
+
+    <section class="dish-section" id="dish-info">
+        <div class="dish-media">
+            <img src="dinner1.jpg" alt="Fried Chicken">
+        </div>
+        <div class="dish-description card-style">
+            <h3 class="description-heading">Overview</h3>
+            <p>Classic fried chicken features pieces of chicken that are marinated or soaked, then dredged in a seasoned flour mixture and deep-fried until the skin is shatteringly crisp and golden brown, while the meat remains juicy and tender. The key steps are the buttermilk soak for tenderness and double-dredging for a thick, crunchy crust.</p>
+        </div>
+    </section>
+
+    <section class="recipe-section" id="recipe-details">
+        <h2 class="section-heading">Preparation Details</h2>
+        
+        <div class="two-column">
+            
+            <div class="recipe-box card-style">
+                <h3><i class='bx bx-bowl-hot'></i> Ingredients:</h3>
+                <ul class="recipe-list">
+    <li>Chicken (1.5 kg, assorted pieces)</li>
+    <li>Buttermilk (2 cups)</li>
+    <li>All-Purpose Flour (2 cups)</li>
+    <li>Cornstarch (1/2 cup)</li>
+    <li>Salt (2 tbsp total)</li>
+    <li>Black Pepper (1 tbsp)</li>
+    <li>Paprika (1 tbsp)</li>
+    <li>Garlic Powder (1 tbsp)</li>
+    <li>Onion Powder (1 tsp)</li>
+    <li>Cayenne Pepper (1/2 tsp, optional)</li>
+    <li>Peanut Oil or Vegetable Shortening (for frying)</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-box card-style">
+                <h3><i class='bx bx-check-double'></i> Steps:</h3>
+                <ol class="recipe-list">
+    <li>Prepare the Brine In a large bowl, mix the buttermilk, 1 tablespoon of salt, and hot sauce (if using). Add the chicken pieces, ensuring they are fully submerged. Cover and refrigerate for at least 4 hours, or up to 24 hours.</li>
+    <li>Mix the Coating In a separate wide, shallow dish, whisk together the flour, cornstarch, 1 tablespoon of salt, pepper, paprika, garlic powder, onion powder, and cayenne (if using).</li>
+    <li>Dredge the Chicken Remove the chicken pieces from the buttermilk (do not rinse). Shake off any excess liquid. Place the chicken piece into the seasoned flour mixture, coating thoroughly.</li>
+    <li>Double-Dip for Crispness Dip the coated chicken piece back into the buttermilk briefly, then immediately dredge it back into the seasoned flour mixture for a second, final coat. Press the flour mixture onto the chicken firmly to create a thick crust.</li>
+    <li>Heat the Oil In a deep pot or Dutch oven, heat the oil over medium-high heat until it reaches 325°F (165°C). Use a thermometer to monitor the temperature.</li>
+    <li>Fry the Chicken Carefully place 3-4 chicken pieces into the hot oil, ensuring you do not overcrowd the pot. Fry the dark meat (thighs, legs) for about 12-14 minutes, and white meat (wings, breasts) for 6-8 minutes, flipping occasionally.</li>
+    <li>Check Doneness and Drain The chicken is done when the internal temperature reaches 165°F (74°C). Remove the chicken and place it on a wire rack over paper towels to drain excess oil.</li>
+    <li>Serve Serve the fried chicken hot and fresh for the best crispy texture.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+<section class="video-walkthrough-section" id="walkthrough">
+    <h2 class="section-heading">Video Walkthrough</h2>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/Pe9sHUM9o6w" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+</main>
+<section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-row">
+    <a class="contact-icon" href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.03H7.9v-2.9h2.54V9.1c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v7.03C18.34 21.21 22 17.07 22 12.07z"/>
+      </svg>
+    </a>
+
+    <a class="contact-icon" href="https://gmail.com" target="_blank" rel="noopener" aria-label="Email">
+
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+
+    <a class="contact-icon" href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+ 
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M22 5.72c-.65.29-1.36.48-2.1.57.76-.46 1.35-1.2 1.63-2.07-.71.42-1.5.73-2.34.9A3.92 3.92 0 0012.6 7.8c0 .31.03.62.1.91C8.3 8.56 5 6.6 2.8 3.66c-.34.57-.54 1.23-.54 1.95 0 1.35.69 2.54 1.74 3.24-.63-.02-1.22-.2-1.73-.49v.05c0 1.88 1.28 3.45 2.98 3.81-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07.5 1.56 1.95 2.7 3.67 2.73A7.88 7.88 0 012 19.54a11.08 11.08 0 006 1.75c7.2 0 11.14-6 11.14-11.2v-.51c.77-.54 1.4-1.24 1.92-2.03-.7.32-1.45.54-2.22.64z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+    <footer class="footer">
+        <p>© 2025 Cuisune-na. All rights reserved.</p>
+    </footer>
+        <script src="menu.js" defer></script>
+</body>
+</html>

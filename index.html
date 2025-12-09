@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuisune-na | Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="Cuisine-na-logo.png" alt="Logo" width="15%" height="7.5%">
+
+            <ul>
+                <li style="color: white; font-weight: bolder; text-decoration: underline;">
+        <li class="nav-active"><a href="index.html">Home</a></li>
+        <li class="nav-active"><a href="mainc.html">Main Course</a></li>
+        <li class="nav-active"><a href="sides.html">Sides</a></li>
+        <li class="nav-active"><a href="sal.html">Salads</a></li>
+        <li class="nav-active"><a href="dess.html">Desserts</a></li>
+
+                <form class="search-form" action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="q">
+                </form>
+
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </ul>
+        </nav>
+    </header>
+
+<nav class="side-menu" id="sideMenu">
+    <a href="#" class="side-logo">
+        <img src="Cuisine-na-logo.png" alt="Cuisune-na Logo">
+    </a>
+<a href="profile.html" class="account-link highlighted">
+    <i class='bx bx-user-circle'></i> Accounts
+</a>
+    
+    <hr style="width: 100%; border: 0; 
+    border-top: 1px solid #eee; 
+    margin: 15px 0;">
+    
+    <h4>Navigation</h4> 
+    <ul>
+            <li><a href="#introduction" class="scroll-link">Introduction</a></li> 
+            <li><a href="#top-rated" class="scroll-link">Top Rated & New</a></li>
+            <li><a href="#about-us" class="scroll-link">About Us</a></li>
+            <li><a href="#contact-info" class="scroll-link">Contact Us</a></li>
+    </ul>
+    
+</nav>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <section class="hero" id="introduction">
+        <h1>Introduction</h1>
+        <p>        <p>Welcome to Cuisine-Na, your kitchen companion! We believe that the best meals are made at home, shared with the people you love. Whether you're a seasoned chef or just tying on your first apron, our extensive collection of easy-to-follow recipes is here to inspire your next culinary adventure. Dive in, discover new flavors, and start cooking something delicious tonight!</p>
+</p>
+    </section>
+
+    <section class="top-rated" id="top-rated">
+        <h2>Top Rated</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="breakfast1.jpg" alt="Grilled Cheese">
+            <p>Grilled Cheese Sandwich</p>
+        </div>
+
+        <div class="card">
+            <img src="dinner1.jpg" alt="Chicken">
+            <p>Fried Chicken</p>
+        </div>
+
+        <div class="card">
+            <img src="finger3.jpg" alt="Lumpia">
+            <p>Lumpia Shanghai</p>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="about" id="about-us">
+        <h2>About Us</h2>
+        <p>Gyan Chleon and Moises saw the same problem everywhere. People loved food, but they hated cooking.
+
+Recipes were confusing. Measurements were wrong. Home cooks wasted time and groceries trying to figure out vague steps. They were making food disasters, not delicious meals.
+
+Gyan Chleon was tired of the technical failures. Moises was tired of the unclear, overwhelming options.
+
+They realized cooks needed a reliable guide. They needed a system that offered clear Navigation for every culinary Adventure. That is why they created Cuisine-NA. They built the solution they wished existed.</p>
+    </section>
+
+    <section class="contact" id="contact-info">
+        <h2>Contact Us</h2>
+
+        <div class="contact-row">
+
+            <a class="contact-icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#fff" d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.03H7.9v-2.9h2.54V9.1c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v7.03C18.34 21.21 22 17.07 22 12.07z"/></svg>
+            </a>
+
+            <a class="contact-icon" href="https://gmail.com" target="_blank" aria-label="Email">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#fff" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+
+            <a class="contact-icon" href="https://x.com" target="_blank" aria-label="X">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#fff" d="M22 5.72c-.65.29-1.36.48-2.1.57.76-.46 1.35-1.2 1.63-2.07-.71.42-1.5.73-2.34.9A3.92 3.92 0 0012.6 7.8c0 .31.03.62.1.91C8.3 8.56 5 6.6 2.8 3.66c-.34.57-.54 1.23-.54 1.95 0 1.35.69 2.54 1.74 3.24-.63-.02-1.22-.2-1.73-.49v.05c0 1.88 1.28 3.45 2.98 3.81-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07.5 1.56 1.95 2.7 3.67 2.73A7.88 7.88 0 012 19.54a11.08 11.08 0 006 1.75c7.2 0 11.14-6 11.14-11.2v-.51c.77-.54 1.4-1.24 1.92-2.03-.7.32-1.45.54-2.22.64z"/></svg>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Cuisune-na. All rights reserved.</p>
+    </footer>
+
+    <script src="menu.js" defer></script>
+
+    <!-- Popup Modal -->
+<div id="foodModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img id="modalImg" src="" alt="Food Image">
+        <h3 id="modalTitle">Food Item</h3>
+        <p id="modalDesc">Description goes here...</p>
+
+        <button id="modalBtn">View Recipe</button>
+    </div>
+</div>
+
+</body>
+
+<script>
+const modal = document.getElementById("foodModal");
+const modalImg = document.getElementById("modalImg");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const modalBtn = document.getElementById("modalBtn");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".card").forEach((card, index) => {
+    card.addEventListener("click", () => {
+    
+        const items = [
+            {
+                title: "Grilled Cheese Sandwich",
+                desc: "5 minutes prep, 5-10 minutes cooking.",
+                img: "breakfast1.jpg",
+                link: "breakfast1.html"
+            },
+            {
+                title: "Fried Chicken",
+                desc: "10 minutes prep, 25-30 minutes cooking.",
+                img: "dinner1.jpg",
+                link: "dinner1.html"
+            },
+            {
+                title: "Lumpia Shanghai",
+                desc: "20 minutes prep, 15 minutes cooking.",
+                img: "finger3.jpg",
+                link: "finger3.html"
+            }
+        ];
+
+        modalImg.src = items[index].img;
+        modalTitle.textContent = items[index].title;
+        modalDesc.textContent = items[index].desc;
+
+        // Make the button redirect!
+        modalBtn.onclick = () => {
+            window.location.href = items[index].link;
+        };
+
+        modal.style.display = "block";
+    });
+});
+
+closeBtn.addEventListener("click", () => modal.style.display = "none");
+
+window.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+});
+</script>
+
+
+</html>

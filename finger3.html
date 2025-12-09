@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuisune-na | Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="Cuisine-na-logo.png" alt="Logo" width="15%" height="7.5%">
+
+            <ul>
+                <li style="color: white; font-weight: bolder; text-decoration: underline;">
+        <li class="nav-active"><a href="index.html">Home</a></li>
+        <li class="nav-active"><a href="mainc.html">Main Course</a></li>
+        <li class="nav-active"><a href="sides.html">Sides</a></li>
+        <li class="nav-active"><a href="sal.html">Salads</a></li>
+        <li class="nav-active"><a href="dess.html">Desserts</a></li>
+
+                <form class="search-form" action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="q">
+                </form>
+
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </ul>
+        </nav>
+    </header>
+
+<nav class="side-menu" id="sideMenu">
+    <a href="#" class="side-logo">
+        <img src="Cuisine-na-logo.png" alt="Cuisune-na Logo">
+    </a>
+<a href="profile.html" class="account-link highlighted">
+    <i class='bx bx-user-circle'></i> Accounts
+</a>
+    
+    <hr style="width: 100%; border: 0; 
+    border-top: 1px solid #eee; 
+    margin: 15px 0;">
+    
+    <h4>Navigation</h4> 
+    <ul>
+            <li><a href="#dish" class="scroll-link">Overview</a></li> 
+            <li><a href="#recipe-details" class="scroll-link">Preparation</a></li>
+            <li><a href="#walkthrough" class="scroll-link">Walkthrough</a></li>
+            <li><a href="#contact-info" class="scroll-link">Contact Us</a></li>
+    </ul>
+    
+</nav>
+
+    <div class="overlay" id="overlay"></div>
+
+<main class="dish-content" id="dish">
+    
+    <h1 class="dish-title">Lumpiang Shanghai</h1>
+
+    <section class="dish-section" id="dish-info">
+        <div class="dish-media">
+            <img src="finger3.jpg" alt="Lumpiang Shanghai">
+        </div>
+        <div class="dish-description card-style">
+            <h3 class="description-heading">Overview</h3>
+            <p>Lumpia Shanghai consists of thin, delicate wrappers tightly rolled around a savory filling of seasoned ground pork, carrots, and onions. The rolls are deep-fried until perfectly golden and crunchy. The small size makes them an ideal appetizer or side dish, traditionally served with a sweet and sour sauce.</p>
+        </div>
+    </section>
+
+    <section class="recipe-section" id="recipe-details">
+        <h2 class="section-heading">Preparation Details</h2>
+        
+        <div class="two-column">
+            
+            <div class="recipe-box card-style">
+                <h3><i class='bx bx-bowl-hot'></i> Ingredients:</h3>
+                <ul class="recipe-list">
+    <li>Ground Pork (500g / 1 lb)</li>
+    <li>Carrot (1/2 cup, minced)</li>
+    <li>Onion (1/2 cup, minced)</li>
+    <li>Garlic (2 cloves, minced)</li>
+    <li>Green Onion (1/4 cup, chopped)</li>
+    <li>Egg (1 medium, beaten)</li>
+    <li>Soy Sauce (1 tbsp)</li>
+    <li>Sesame Oil (1 tsp)</li>
+    <li>Lumpia Wrappers (40-50 pieces)</li>
+    <li>Cooking Oil (for frying)</li>
+    <li>Salt and Black Pepper (to taste)</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-box card-style">
+                <h3><i class='bx bx-check-double'></i> Steps:</h3>
+                <ol class="recipe-list">
+<li>Prepare the Filling In a large bowl, combine the ground pork, minced carrot, minced onion, minced garlic, chopped green onion, beaten egg, soy sauce, sesame oil, salt, and black pepper. Mix everything thoroughly using your hands or a spoon until the ingredients are evenly distributed.</li>
+    <li>Prepare the Wrappers Separate the lumpia wrappers carefully. Lay one wrapper flat on a clean, dry surface, positioning it like a diamond (a point facing you).</li>
+    <li>Roll the Lumpia Place about 1 to 1.5 tablespoons of the meat filling near the point closest to you. Shape the filling into a short, thin log.</li>
+    <li>Seal the Wrapper Fold the bottom point up over the filling. Fold the left and right corners inward. Then, roll the wrapper tightly upward toward the far point. Use a dab of water to moisten the far corner and press it down to seal the roll completely.</li>
+    <li>Fry the Lumpia Heat the cooking oil in a deep pot or skillet over medium heat until it reaches about 350°F (175°C). Fry the lumpia in batches for 5 to 7 minutes, or until they are golden brown and crispy. Flip them often to ensure even cooking.</li>
+    <li>Drain and Serve Remove the fried lumpia with tongs or a slotted spoon and drain them on a wire rack or paper towels to remove excess oil. Serve the Lumpia Shanghai hot with sweet and sour sauce on the side.</li>
+        </div>
+    </section>
+
+<section class="video-walkthrough-section" id="walkthrough">
+    <h2 class="section-heading">Video Walkthrough</h2>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/7lhbplkueu0" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+</main>
+<section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-row">
+    <a class="contact-icon" href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.03H7.9v-2.9h2.54V9.1c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v7.03C18.34 21.21 22 17.07 22 12.07z"/>
+      </svg>
+    </a>
+
+    <a class="contact-icon" href="https://gmail.com" target="_blank" rel="noopener" aria-label="Email">
+
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+
+    <a class="contact-icon" href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+ 
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M22 5.72c-.65.29-1.36.48-2.1.57.76-.46 1.35-1.2 1.63-2.07-.71.42-1.5.73-2.34.9A3.92 3.92 0 0012.6 7.8c0 .31.03.62.1.91C8.3 8.56 5 6.6 2.8 3.66c-.34.57-.54 1.23-.54 1.95 0 1.35.69 2.54 1.74 3.24-.63-.02-1.22-.2-1.73-.49v.05c0 1.88 1.28 3.45 2.98 3.81-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07.5 1.56 1.95 2.7 3.67 2.73A7.88 7.88 0 012 19.54a11.08 11.08 0 006 1.75c7.2 0 11.14-6 11.14-11.2v-.51c.77-.54 1.4-1.24 1.92-2.03-.7.32-1.45.54-2.22.64z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+    <footer class="footer">
+        <p>© 2025 Cuisune-na. All rights reserved.</p>
+    </footer>
+        <script src="menu.js" defer></script>
+</body>
+</html>
